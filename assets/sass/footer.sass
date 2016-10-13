@@ -1,0 +1,41 @@
+.footer
+	display: flex
+	align-items: center
+	justify-content: space-around
+	flex-basis: 15%
+	&__sponsors
+		display: flex
+		flex-direction: column
+		align-items: center
+		flex-basis: 20%
+		&__title
+			font-weight: 700
+			border-bottom: 1px solid color('grey', 'base')
+			width: 100%
+			margin: 0
+			text-align: center
+		
+		&__content
+			display: flex
+			justify-content: space-between
+			align-items: center
+			&__logo
+				width: 23%
+				&:nth-child(2)
+					width: 35%
+	&__copyright
+		display: flex
+		justify-content: center
+		flex-basis: 55%
+		font-weight: 300
+		&__love
+			animation-name: beat-heart
+			animation-duration: 1.2s
+			animation-iteration-count: infinite
+			margin: 0 .3rem
+			color: color('red', 'base')
+	&__social
+		flex-basis: 15%
+		&__list
+			display: flex
+			justify-content: space-around
