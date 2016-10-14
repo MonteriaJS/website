@@ -1,7 +1,12 @@
-$roboto-font-path: 'assets/fonts/roboto/'
+$roboto-font-path: "../../node_modules/materialize-css/fonts/roboto/"
 
-@import "../node_modules/materialize-css/sass/materialize"
 @import url('//fonts.googleapis.com/icon?family=Material+Icons')
+@import 'materialize'
+
+// Import local components
+@import 'menu'
+@import 'main'
+@import 'footer'
 
 /* You can add global styles to this file, and also import other style files */
 @keyframes beat-heart
@@ -38,7 +43,7 @@ $roboto-font-path: 'assets/fonts/roboto/'
 
 body
 	margin: 0
-	// background-image: url('assets/images/javascripters.jpg')
+	// background-image: url('javascripters.jpg')
 	background-size: cover
 	background-repeat: no-repeat
 	background-position: center

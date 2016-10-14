@@ -1,0 +1,1 @@
+require('!style!css!sass!./assets/sass/style.sass');
