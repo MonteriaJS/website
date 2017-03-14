@@ -1,3 +1,25 @@
 .menu
-	&__image__logo
-		width: 10px
+	display: flex
+	justify-content: space-between
+	&__list
+		display: flex
+		&__item
+			&__link
+				font-weight: 400
+				font-size: .9rem
+				color: $primary-text
+				padding: .4rem .8rem
+				margin: 0 .5rem
+				border-radius: 3rem
+				transition: .5s all ease
+				& i
+					margin-right: .2rem
+				&--active
+					transition: .4s all ease
+					background-color: $accent-color
+	&__image
+		display: flex
+		align-items: center
+		margin: 0 0 0 1rem
+		&__logo
+			width: 7rem

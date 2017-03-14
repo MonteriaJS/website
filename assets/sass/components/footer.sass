@@ -2,7 +2,8 @@
 	display: flex
 	align-items: center
 	justify-content: space-around
-	flex-basis: 15%
+	position: fixed
+	bottom: 0
 	&__sponsors
 		display: flex
 		flex-direction: column
@@ -39,3 +40,18 @@
 		&__list
 			display: flex
 			justify-content: space-around
+			&__item
+				border-radius: 50%
+				&__link i
+					padding: .5rem .7rem
+					color: $primary-text
+					font-size: 1.7rem
+					transition: .5s all linear
+					&.fa-facebook:hover
+						color: color('blue', 'darken-4')
+					&.fa-twitter:hover
+						color: color('light-blue', 'base')
+					&.fa-instagram:hover
+						color: color('pink', 'darken-1')
+					&.fa-github:hover
+						color: color('purple', 'darken-1')

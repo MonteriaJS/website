@@ -3,26 +3,37 @@ var path = require('path');
 var config = {
 	entry : './entry.js',
 	output: {
-		path : './assets/js',
-		filename : 'main.js'
+		filename : 'main.js',
+		path : path.resolve(__dirname, 'assets/js')
 	},
 	module : {
-		loaders : [
+		rules : [
 			{
 				test : /\.sass$/,
-				loaders : ['styles', 'css', 'sass']
+				use : [{
+					loader : "style-loader"
+				}, {
+					loader : "css-loader"
+				}, {
+					loader : "sass-loader",
+					options : {
+						includePaths : [
+							"./node_modules/materialize-css/sass",
+							"./assets/sass/components"
+						]
+					}
+				}],
 			},
 			{
 				test : /\.(eot|svg|ttf|woff|woff2)$/,
-				loader : 'file?name=../fonts/roboto/[name].[ext]'
+				use : 'file-loader?name=../fonts/roboto/[name].[ext]'
+			},
+			{
+				test: /\.(jpg|jpeg|png|svg)$/,
+				use: 'file-loader?name=../images/[name].[ext]'
 			}
-		]
-	},
-	sassLoader : {
-		includePaths : [
-			path.resolve(__dirname, "node_modules/materialize-css/sass"),
-			path.resolve(__dirname, "assets/sass/components"),
-		]
+
+		],
 	}
 }
 

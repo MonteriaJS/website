@@ -8,11 +8,14 @@ html(lang='es')
 			title Comunidad MonteríaJS
 
 	body
+		.overlay
+
 		include components/menu.pug
 
 		block content
-			include components/main.pug
 
 		include components/footer.pug
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	script(src="https://use.fontawesome.com/ffcfae3e84.js")
 	script(src="js/main.js")

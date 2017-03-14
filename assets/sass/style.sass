@@ -1,4 +1,9 @@
-$roboto-font-path: "../../node_modules/materialize-css/fonts/roboto/"
+$primary-text: #343434;
+
+// Palette
+$primary-color: #3F51B5;
+$secondary-color: #303F9F;
+$accent-color: #FF5252;
 
 @import url('//fonts.googleapis.com/icon?family=Material+Icons')
 @import 'materialize'
@@ -6,6 +11,9 @@ $roboto-font-path: "../../node_modules/materialize-css/fonts/roboto/"
 // Import local components
 @import 'menu'
 @import 'main'
+@import 'about-us'
+@import 'events'
+@import 'support'
 @import 'footer'
 
 /* You can add global styles to this file, and also import other style files */
@@ -31,19 +39,32 @@ $roboto-font-path: "../../node_modules/materialize-css/fonts/roboto/"
 	100%
 		transform: scale3d(1, 1, 1)
 	
-
+.section--hide
+	position: relative
+	left: 100%
+	top: 0
+	// animation-name: hideOut
+	// animation-duration: .5s
+.section--show
+	display: flex
+	position: relative
+	left: 0
+	top: 0
+	// animation-name: showUp
+	// animation-duration: .5s
 
 .overlay
 	position: absolute
 	z-index: -1
 	opacity: .75
 	width: 100vw
-	height: 100vh
+	height: 100%
 	background-color: #fff
 
 body
+	color: $primary-text
 	margin: 0
-	// background-image: url('javascripters.jpg')
+	background-image: url('../images/javascripters.jpeg')
 	background-size: cover
 	background-repeat: no-repeat
 	background-position: center

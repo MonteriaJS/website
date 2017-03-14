@@ -1,1 +1,2 @@
-require('!style!css!sass!./assets/sass/style.sass');
+require('./assets/sass/style.sass');
+require('./assets/js/monteria.js');

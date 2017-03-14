@@ -1,15 +1,15 @@
 {
-  "name": "website",
+  "name": "monteriajs.org",
   "version": "1.0.0",
   "description": "Website MonteriaJS http://monteriajs.org",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
-    "build-wp": "webpack --progress -c -w"
+    "build": "webpack -w"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MonteriaJS/website.git"
+    "url": "git+https://github.com/MonteriaJS/website.git",
+    "type": "git"
   },
   "keywords": [
     "MonteríaJS",
@@ -30,12 +30,12 @@
     "pug": "^2.0.0-beta6"
   },
   "devDependencies": {
-    "css-loader": "^0.25.0",
+    "css-loader": "^0.27.3",
     "file-loader": "^0.9.0",
     "materialize-css": "^0.97.7",
     "node-sass": "^3.10.1",
-    "sass-loader": "^4.0.2",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.13.2"
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1"
   }
 }
