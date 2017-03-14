@@ -1,31 +1,19 @@
-# Website
+# Comunidad MonteríaJS
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
+Hola javascripter! Eres libre de aportar a este proyecto el cual ha sido iniciado por la comunidad y sus organizadores. Cualquier idea, aporte o critica constructiva será bien recibida.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+No olvides los pasos para contribuir:
 
-## Code scaffolding
+1. Dale **Fork** al proyecto pulsando el botón que se encuentra en la parte superior derecha :fork_and_knife:.
+2. Una vez hecho eso, el proyecto se copiará en tu perfil de github, clonalo desde la línea de comandos :octocat:.
+3. Realiza los cambios que sean necesarios y subelos al proyecto de tu perfil.
+4. Finalmente, realiza un **Pull Request**, nosotros lo revisaremos :neckbeard:.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+Para trabajar en el proyecto:
 
-## Build
+1. Antes que todo, instala [Yarn](https://yarnpkg.com/lang/en/) como manejador de paquetes. Después, debes instalar las dependencias, para ello usamos el comando `yarn install`.
+2. El proyecto usa NodeJS v6.x.x, verifica tu versión antes de iniciar.
+3. Para una forma más comoda de desarrollo, se hace uso de [Nodemon](https://nodemon.io/), una utilidad que monitorea todos los cambios que ocurren en el servidor para aplicarlos y reiniciar el servidor por ti sin necesidad de que tú lo hagas.
+2. Por último, revisa el **package.json**, verifica los comandos y empieza a desarrollar.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Recuerda que puedes escribirnos a **monteriajs@gmail.com** sobre cualquier duda o problema que puedas tener :simple_smile:
